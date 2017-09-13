@@ -1,0 +1,21 @@
+http://www.example.com
+$prefix_url1 = 'www.example.com';
+$prefix_url2 = 'www.example.com';
+$preg1 = '/example/'; //源网页的正则
+$preg2 = '/example/'; //通过源网页-》子网页的正则
+
+
+
+http://www.assrt.net
+$prefix_url1 = 'assrt.net';
+$prefix_url2 = 'http://www.assrt.net';
+$preg1 = '/\/xml\/sub.+xml/'; //源网页的正则
+$preg2 = '/\/download\/\d+\/.+((\.rar)|(\.zip))/'; //通过源网页-》子网页的正则
+
+
+
+http://www.zimuku.net/newsubs?t=tv&ad=1&p=
+$prefix_url1 = 'http://www.zimuku.net';
+$prefix_url2 = 'http://www.zimuku.net';
+$preg1 = '/\/detail\/\d+.html/'; //源网页的正则
+$preg2 = '/\/download\/.+(?="><)/'; //通过源网页-》子网页的正则
